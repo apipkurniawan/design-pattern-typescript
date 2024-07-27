@@ -74,8 +74,10 @@ namespace Observer {
 
   promo.attach(baju);
   promo.attach(celana);
+  promo.attach(topi);
 
   promo.setPromo(true);
+  promo.detach(celana);
 
   console.log(promo);
 }
