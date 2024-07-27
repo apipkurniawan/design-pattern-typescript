@@ -47,3 +47,9 @@ class NumberToDate implements NumericConverter {
 // how to use :
 const mataUang = new NumberConvertion(new NumberToCurrency());
 mataUang.execute(100000000);
+
+const decimal = new NumberConvertion(new NumberToDecimalSeparator());
+decimal.execute(500000000);
+
+const date = new NumberConvertion(new NumberToDate());
+date.execute(400);
