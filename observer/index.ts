@@ -16,7 +16,7 @@ namespace Observer {
 
     attach(observer: Observer): void {
       const isExist: boolean = this.observers.includes(observer);
-      if (!isExist) {
+      if (isExist) {
         return console.log("observer " + observer.name + " sudah ada");
       }
 
