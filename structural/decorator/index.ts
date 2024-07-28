@@ -1,7 +1,6 @@
 namespace Decorator {
   interface IProduct {
-    name: string;
-    price: number;
+    getProduct(): any;
   }
 
   class Product implements IProduct {
