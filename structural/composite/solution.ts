@@ -82,13 +82,13 @@ namespace CompositeSolution {
   console.log("category...", category);
 
   const print = (composite: Category): void => {
-    console.log("kategori" + composite.getName());
+    console.log("kategori " + composite.getName());
 
     composite.children.forEach((el) => {
       if (el.isComposite() && el.children.length) {
         print(el);
       } else {
-        console.log("product" + el.getName());
+        console.log("product " + el.getName());
       }
     });
   };
