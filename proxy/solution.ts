@@ -55,9 +55,13 @@ namespace ProxySolution {
     }
   }
 
-  const covid1 = new ProxyCovid(new Covid("id"));
-  console.log(await covid1.getData());
+  const getCovid = async () => {
+    const covid1 = new ProxyCovid(new Covid("id"));
+    console.log(await covid1.getData());
 
-  const covid2 = new ProxyCovid(new Covid("id"));
-  console.log(await covid2.getData());
+    const covid2 = new ProxyCovid(new Covid("id"));
+    console.log(await covid2.getData());
+  };
+
+  getCovid();
 }
